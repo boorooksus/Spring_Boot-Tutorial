@@ -2,11 +2,9 @@
 
 ## 스프링 부트 공부 자료
 
-### 강의 내용 정리
+### 강의 내용 Notion 정리
 
 <https://www.notion.so/booroogi/Spring-Boot-0171690d74b44278a211351464efb7a8>
-
-
 
 
 
