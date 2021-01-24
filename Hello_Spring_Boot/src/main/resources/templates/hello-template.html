@@ -1,0 +1,7 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p th:text="'hello ' + ${name}">hello! empty</p>
+</body>
+
+<!-- "hello! empty": 서버 없이 이 파일 열 땐 이 메시지가 뜨지만
+서버 실행하면 이 메시지 대신 name으로 치환됨 -->
