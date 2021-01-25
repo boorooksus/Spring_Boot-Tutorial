@@ -1,9 +1,12 @@
 package Spring_Boot_Study.Hello_Spring_Boot.repository;
 
 import Spring_Boot_Study.Hello_Spring_Boot.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+// 스프링 컨테이너에 Repository로 등록
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
