@@ -13,11 +13,11 @@ public class HelloController {
     public String hello(Model model){
 
         model.addAttribute("data", "hello!!!!");
-        return "hello";
+        return "hello";  // templete/hello.html 리턴
     }
 
     @GetMapping("hello-mvc")
-    public String helloMvc(@RequestParam("name") String name, Model model){
+    public String helloMvc(@RequestParam(value = "name", required = false) String name, Model model){
         model.addAttribute("name", name);
         return "hello-template";
     }
