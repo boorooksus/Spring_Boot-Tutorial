@@ -6,9 +6,11 @@ import Spring_Boot_Study.Hello_Spring_Boot.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     // 기존의 new 로 새 객체를 생성하는 대신 constructor로 외부에서 넣어주도록 변경
     // DI(Dependency Injection) - 외부에서 넣어줌
