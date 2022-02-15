@@ -1,6 +1,6 @@
 package Spring_Boot_Study.Hello_Spring_Boot.service;
 
-import Spring_Boot_Study.Hello_Spring_Boot.repository.JpaMemberRepository;
+import Spring_Boot_Study.Hello_Spring_Boot.aop.TimeTraceAop;
 import Spring_Boot_Study.Hello_Spring_Boot.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -41,5 +41,10 @@ public class SpringConfig {
 ////        return new MemoryMemberRepository();
 ////        return new JdbcTemplateMemberRepository(dataSource);
 ////        return new JpaMemberRepository(em);
+//    }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop(){
+//        return new TimeTraceAop();
 //    }
 }
